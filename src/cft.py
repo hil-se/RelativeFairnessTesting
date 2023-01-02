@@ -15,7 +15,7 @@ class ContextualFairnessTesting():
                     "Heart": load_heart, "Compas": load_compas, "StudentMat": load_student_mat,
                     "StudentPor": load_student_por}
         regressors = {"Linear": LinearRegression(positive=True),
-                      "Logistic": LogisticRegression(max_iter=10000)}
+                      "Logistic": LogisticRegression(max_iter=100000)}
         self.X, self.y, self.protected = datasets[data]()
         self.regressor = regressors[regressor]
         self.inject = inject
