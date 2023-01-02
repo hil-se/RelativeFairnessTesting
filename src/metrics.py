@@ -78,10 +78,3 @@ class Metrics:
             else:
                 bias_diff = 0.0
         return bias_diff
-
-
-
-
-
-
-

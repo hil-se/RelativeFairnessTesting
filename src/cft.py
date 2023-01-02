@@ -45,6 +45,7 @@ class ContextualFairnessTesting():
         y_new = y_train[:]
         for a in self.inject:
             s = stats.zscore(X_train[a])
+            # s = (X_train[a]-0.5)*2
             y_new = np.random.normal(y_new + s * self.inject[a] * y_sigma, np.abs(self.inject[a]) * y_sigma)
         if len(np.unique(y_train))==2:
             # Binary Classification
