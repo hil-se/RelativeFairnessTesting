@@ -55,8 +55,8 @@ def inject_Bank():
 
 def inject_German():
     injects = [None, {"sex": small}, {"sex": large}, {"sex": -small}, {"sex": -large}, {"age": small}, {"age": large},
-               {"age": -small}, {"age": -large}, {"sex": small, "age": small}, {"sex": -small, "age": -small},
-               {"sex": small, "age": -small}, {"sex": -small, "age": small}]
+               {"age": -small}, {"age": -large}, {"sex": large, "age": large}, {"sex": -large, "age": -large},
+               {"sex": large, "age": -large}, {"sex": -large, "age": large}]
     outputs = [run_inject(data="German", inject=inject) for inject in injects]
     df = pd.DataFrame(outputs)
     df.to_csv("../inject_results/german.csv", index=False)
