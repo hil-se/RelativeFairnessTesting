@@ -74,14 +74,14 @@ def inject_StudentPor():
     df.to_csv("../inject_results/studentPor.csv", index=False)
 
 def inject_All():
-    # inject_Bank()
-    # inject_Default()
+    inject_Bank()
+    inject_Default()
     inject_Heart()
-    # inject_StudentMat()
-    # inject_StudentPor()
-    # inject_Adult()
-    # inject_Compas()
-    # inject_German()
+    inject_StudentMat()
+    inject_StudentPor()
+    inject_Adult()
+    inject_Compas()
+    inject_German()
 
 
 if __name__ == "__main__":
