@@ -1,4 +1,4 @@
-# Contextual Fairness Testing
+# Relative Fairness Testing
 
 #### Data (included in the [data/](https://github.com/hil-se/RelativeFairnessTesting/tree/main/synthetic/data) folder)
 
