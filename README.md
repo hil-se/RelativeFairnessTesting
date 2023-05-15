@@ -7,6 +7,6 @@ Test relative fairness between two decision sets made on different data.
  
 
 #### Experiments on eight datasets with injected biases
-[./synthetic/]([https://github.com/hil-se/RelativeFairnessTesting/tree/main/real](https://github.com/hil-se/RelativeFairnessTesting/tree/main/synthetic))
+[./synthetic/](https://github.com/hil-se/RelativeFairnessTesting/tree/main/synthetic)
 
 
