@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 cd src
 ```
-2. Generate results in [_inject\_results/_](https://github.com/hil-se/ContextualFairnessTesting/tree/main/inject_results)
+2. Generate results in [_inject\_results/_](https://github.com/hil-se/RelativeFairnessTesting/tree/main/synthetic)
 ```
 python main.py
 ```
