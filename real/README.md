@@ -1,22 +1,29 @@
-# Contextual Fairness Testing
+# Relative Fairness Testing
 
-#### Data (included in the [data/](https://github.com/hil-se/RelativeFairnessTesting/tree/main/synthetic/data) folder)
+#### Data (included in the [data/](https://github.com/hil-se/RelativeFairnessTesting/tree/main/real/data) folder)
 
- - Adult, Bank, Default, German, Student, and Heart datasets
-   + Raw data comes from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets.php).
- - Compas dataset
-   + Raw data comes from [propublica](https://github.com/propublica/compas-analysis/)
+ - [SCUT-FBP5500](https://github.com/HCIILAB/SCUT-FBP5500-Database-Release).
+   + [Selected_Ratings.csv](https://github.com/hil-se/RelativeFairnessTesting/blob/main/real/data/Selected_Ratings.csv) extracts P1, P2, P3, and Average ratings from the original data.
+
+#### Pre-Trained weights
+
+ - The VGG-16 model utilizes pre-trained weights on ImageNet data from [deepface_models](https://github.com/serengil/deepface_models).
 
 #### Usage
 0. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
-1. Navigate to the source code:
+1. Create a folder checkpoint:
+```
+mkdir checkpoint
+```
+2. Down load the pre-trained weights of VGG-16 model [vgg_face_weights.h5](https://github.com/serengil/deepface_models/releases/download/v1.0/vgg_face_weights.h5) and put it under _checkpoint/_
+3. Navigate to the source code:
 ```
 cd src
 ```
-2. Generate results in [_inject\_results/_]([https://github.com/hil-se/ContextualFairnessTesting/tree/main/inject_results](https://github.com/hil-se/RelativeFairnessTesting/tree/main/synthetic/inject_results))
+4. Generate results in [results/](https://github.com/hil-se/RelativeFairnessTesting/tree/main/real/results)
 ```
 python main.py
 ```
