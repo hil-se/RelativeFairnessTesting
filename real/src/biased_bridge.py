@@ -59,7 +59,7 @@ class BiasedBridge:
             mu_test, var_test = self.norm_stats(self.delta_test)
             erbt = (mean_test - mean_train) / np.sqrt(var_train / len(s_train) + var_test / len(s_test))
             dof = len(s_train)+len(s_test)-2
-        p = t.sf(np.abs(bias_diff), dof)
+        p = t.sf(np.abs(erbt), dof)
         if bias_diff < 0:
             p = -p
         return p
