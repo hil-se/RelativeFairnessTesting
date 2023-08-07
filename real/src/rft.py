@@ -11,6 +11,18 @@ class RelativeFairnessTesting():
         self.data, self.protected = load_scut()
         self.features = np.array([pixel for pixel in self.data['pixels']])/255.0
 
+    def t_str(self, p):
+        if p >=0 and p<=0.05:
+            # Significant and positive
+            t_color = "\cellcolor{green!20} "
+        elif p <0 and p>=-0.05:
+            # Significant and negative
+            t_color = "\cellcolor{red!20} "
+        else:
+            # Not significant
+            t_color = ""
+        return t_color
+
 
     def run(self):
         n = len(self.data)
@@ -33,8 +45,8 @@ class RelativeFairnessTesting():
             result = {"Pair": base, "Metric": "Train"}
             result["Accuracy"] = 1.0 - m.mae()
             for A in self.protected:
-                result[A+": "+"RBT"] = "%.2f" % m.RBT(self.data[A][train])
-                result[A+": "+"RBD"] = "%.2f" % m.RBD(self.data[A][train])
+                t_color = self.t_str(m.RBT(self.data[A][train]))
+                result[A+": "+"RBD"] = t_color + "%.2f" % m.RBD(self.data[A][train])
             results.append(result)
 
             for target in cols:
@@ -43,32 +55,32 @@ class RelativeFairnessTesting():
                 m = Metrics(self.data[target][train], self.data[base][train])
                 result["Accuracy"] = 1.0 - m.mae()
                 for A in self.protected:
-                    result[A+": "+"RBT"] = "%.2f" %m.RBT(self.data[A][train])
-                    result[A+": "+"RBD"] = "%.2f" %m.RBD(self.data[A][train])
+                    t_color = self.t_str(m.RBT(self.data[A][train]))
+                    result[A+": "+"RBD"] = t_color + "%.2f" %m.RBD(self.data[A][train])
                 results.append(result)
                 # GT on test set
                 result = {"Pair": base+"/"+target, "Metric": "GT Test"}
                 m = Metrics(self.data[target][test], self.data[base][test])
                 result["Accuracy"] = 1.0 - m.mae()
                 for A in self.protected:
-                    result[A + ": " + "RBT"] = "%.2f" %m.RBT(self.data[A][test])
-                    result[A + ": " + "RBD"] = "%.2f" %m.RBD(self.data[A][test])
+                    t_color = self.t_str(m.RBT(self.data[A][test]))
+                    result[A + ": " + "RBD"] = t_color + "%.2f" %m.RBD(self.data[A][test])
                 results.append(result)
                 # Prediction on test set
                 result = {"Pair": base + "/" + target, "Metric": "Unbiased Bridge"}
                 m = Metrics(self.data[target][test], predicts)
                 result["Accuracy"] = 1.0 - m.mae()
                 for A in self.protected:
-                    result[A + ": " + "RBT"] = "%.2f" %m.RBT(self.data[A][test])
-                    result[A + ": " + "RBD"] = "%.2f" %m.RBD(self.data[A][test])
+                    t_color = self.t_str(m.RBT(self.data[A][test]))
+                    result[A + ": " + "RBD"] = t_color + "%.2f" %m.RBD(self.data[A][test])
                 results.append(result)
                 # predict test
                 result = {"Pair": base + "/" + target, "Metric": "Biased Bridge"}
                 m = BiasedBridge(pred_train - y_train, predicts - self.data[target][test].to_numpy())
                 result["Accuracy"] = 1.0
                 for A in self.protected:
-                    result[A + ": " + "RBT"] = "%.2f" % m.RBT(self.data[A][train], self.data[A][test])
-                    result[A + ": " + "RBD"] = "%.2f" % m.RBD(self.data[A][train], self.data[A][test])
+                    t_color = self.t_str(m.RBT(self.data[A][train], self.data[A][test]))
+                    result[A + ": " + "RBD"] = t_color + "%.2f" % m.RBD(self.data[A][train], self.data[A][test])
                 results.append(result)
 
 
