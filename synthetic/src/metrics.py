@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.stats import t
 
 class Metrics:
     def __init__(self, y, y_pred):
@@ -55,11 +56,12 @@ class Metrics:
             bias[group0] = error[np.where(np.array(s) == group0)[0]]
             bias[group1] = error[np.where(np.array(s) == group1)[0]]
             bias_diff = np.mean(bias[group0]) - np.mean(bias[group1])
-            sigma = np.sqrt(np.var(bias[group0], ddof = 1)/len(bias[group0]) + np.var(bias[group1], ddof = 1)/len(bias[group1]))
+            sigma = np.std(self.y_pred - self.y, ddof = 1)
             if sigma:
-                bias_diff = bias_diff / sigma
+                bias_diff = bias_diff / (sigma*np.sqrt(1.0/len(bias[group0])+1.0/(len(bias[group1]))))
             else:
                 bias_diff = 0.0
+            dof = len(s)-2
         else:
             bias_diff = 0.0
             n = 0
@@ -76,4 +78,8 @@ class Metrics:
                 bias_diff = bias_diff * np.sqrt(len(s)) / sigma
             else:
                 bias_diff = 0.0
-        return bias_diff
+            dof = len(s)-1
+        p = t.sf(np.abs(bias_diff), dof)
+        if bias_diff < 0:
+            p = -p
+        return p

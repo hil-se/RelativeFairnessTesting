@@ -5,19 +5,12 @@ import numpy as np
 small=0.1
 large=0.2
 
-def run_inject(data="Adult", regressor="Logistic", inject=None, repeat = 1):
+def run_inject(data="Adult", regressor="Logistic", inject=None):
     runner = RelativeFairnessTesting(data=data, regressor=regressor, inject=inject)
-    results = []
-    for i in range(repeat):
-        result = runner.run()
-        results.append(result)
-    df = pd.DataFrame(results)
-    output = {"Inject": str(inject)}
-    for key in df.keys():
-        # output[key] = "%.2f +/- %.2f" % (np.mean(df[key]), np.std(df[key]))
-        output[key] = "%.2f" % np.mean(df[key])
-    print(output)
-    return output
+    result = runner.run()
+    result["Inject"] = str(inject)
+    print(result)
+    return result
 
 def inject_Adult():
     injects = [None, {"sex": small}, {"sex": large}, {"sex": -small}, {"sex": -large}, {"race": small}, {"race": large},
