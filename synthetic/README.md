@@ -1,6 +1,6 @@
 # Relative Fairness Testing
 
-#### Data (included in the [data/](https://github.com/hil-se/RelativeFairnessTesting/tree/main/synthetic/data) folder)
+#### Data (included in the [data/](data/) folder)
 
  - Adult, Bank, Default, German, Student, and Heart datasets
    + Raw data comes from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets.php).
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 cd src
 ```
-2. Generate results in [_inject\_results/_](https://github.com/hil-se/RelativeFairnessTesting/tree/main/synthetic)
+2. Generate results in [_inject\_results/_](synthetic/inject_results/)
 ```
 python main.py
 ```
