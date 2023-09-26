@@ -1,6 +1,6 @@
 # Relative Fairness Testing
 
-#### Data (included in the [data/](https://github.com/hil-se/RelativeFairnessTesting/tree/main/real/data) folder)
+#### Data (included in the [data/](hata/) folder)
 
  - [SCUT-FBP5500](https://github.com/HCIILAB/SCUT-FBP5500-Database-Release).
    + [Ratings.csv](data/Ratings.csv) extracts ratings from the original data.
