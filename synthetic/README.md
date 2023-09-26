@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 cd src
 ```
-2. Generate results in [_inject\_results/_](inject_results/)
+2. Generate results in [_inject\_results/_](inject\_results/)
 ```
 python main.py
 ```
