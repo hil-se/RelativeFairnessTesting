@@ -22,19 +22,6 @@ class RelativeFairnessTesting():
         self.inject = inject
         self.preprocessor = None
 
-    def t_str(self, p):
-        return "%.2f : " %p
-        # if p >=0 and p<=0.05:
-        #     # Significant and positive
-        #     t_color = "\cellcolor{green!20} "
-        # elif p <0 and p>=-0.05:
-        #     # Significant and negative
-        #     t_color = "\cellcolor{red!20} "
-        # else:
-        #     # Not significant
-        #     t_color = ""
-        # return t_color
-
     def run(self):
         self.train_test_split()
         self.preprocess(self.X_train)
@@ -56,31 +43,25 @@ class RelativeFairnessTesting():
         result = {}
 
         m = Metrics(y_train, pred_train)
-        result["Accuracy"] = 1.0 - m.mae()
+        result["Accuracy"] = "%.2f" % (1.0 - m.mae())
         for key in self.protected:
-            t_color = self.t_str(m.RBT(np.array(self.X_train[key])))
-            result["RBD_PredTrain_" + str(key)] = t_color + "%.2f" %m.RBD(np.array(self.X_train[key]))
+            result["Train: "+key] = "(%.2f) %.2f" % (m.RBT(np.array(self.X_train[key])), m.RBD(np.array(self.X_train[key])))
 
         m = Metrics(self.y_train, y_train)
         for key in self.protected:
-            t_color = self.t_str(m.RBT(np.array(self.X_train[key])))
-            result["RBD_GT_Train_" + str(key)] = t_color + "%.2f" %m.RBD(np.array(self.X_train[key]))
+            result["GT Train: "+key] = "(%.2f) %.2f" % (m.RBT(np.array(self.X_train[key])), m.RBD(np.array(self.X_train[key])))
 
         m = Metrics(self.y_test, y_test)
         for key in self.protected:
-            t_color = self.t_str(m.RBT(np.array(self.X_test[key])))
-            result["RBD_GT_Test_" + str(key)] = t_color + "%.2f" %m.RBD(np.array(self.X_test[key]))
+            result["GT Test: "+key] = "(%.2f) %.2f" % (m.RBT(np.array(self.X_test[key])), m.RBD(np.array(self.X_test[key])))
 
         m = Metrics(self.y_test, pred_test)
         for key in self.protected:
-            t_color = self.t_str(m.RBT(np.array(self.X_test[key])))
-            result["RBD_Unbiased_" + str(key)] = t_color + "%.2f" %m.RBD(np.array(self.X_test[key]))
+            result["Unbiased Bridge: "+key] = "(%.2f) %.2f" % (m.RBT(np.array(self.X_test[key])), m.RBD(np.array(self.X_test[key])))
 
         m = BiasedBridge(pred_train - y_train, pred_test - self.y_test)
         for key in self.protected:
-            t_color = self.t_str(m.RBT(np.array(self.X_train[key]), np.array(self.X_test[key])))
-            result["RBD_Biased_" + str(key)] = t_color + "%.2f" %m.RBD(np.array(self.X_train[key]), np.array(self.X_test[key]))
-
+            result["Biased Bridge: "+key] = "(%.2f) %.2f" % (m.RBT(np.array(self.X_train[key]), np.array(self.X_test[key])), m.RBD(np.array(self.X_train[key]), np.array(self.X_test[key])))
         return result
 
     def inject_bias(self, X_train, y_train):

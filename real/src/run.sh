@@ -15,9 +15,9 @@
 #SBATCH -o log/%J_%a.o
 #SBATCH -e log/%J_%a.e
 
-## Request 5 Days, 0 Hours, 0 Minutes, 0 Seconds run time MAX,
+## Request 1 Days, 0 Hours, 0 Minutes, 0 Seconds run time MAX,
 ## anything over will be KILLED
-#SBATCH -t 1-00:00:00
+#SBATCH -t 5-00:00:00
 
 ## Put in tier3 partition for testing small jobs, like this one
 ## But because our requested time is over 4 day, it won't run, so
@@ -29,7 +29,7 @@
 #SBATCH --gres=gpu:a100:4
 
 ## Job memory requirements in MB
-#SBATCH --mem=40G
+#SBATCH --mem=50G
 
 ## Job script goes below this line
 

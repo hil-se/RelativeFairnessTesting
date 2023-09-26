@@ -20,13 +20,16 @@ class Metrics:
     def RBD(self, s):
         # s is an array of numerical values of a sensitive attribute
         if len(np.unique(s)) == 2:
-            group0 = max(np.unique(s))
-            group1 = min(np.unique(s))
             error = np.array(self.y_pred) - np.array(self.y)
             bias = {}
-            bias[group0] = error[np.where(np.array(s)==group0)[0]]
-            bias[group1] = error[np.where(np.array(s)==group1)[0]]
-            bias_diff = np.mean(bias[group0]) - np.mean(bias[group1])
+            bias[1] = error[np.where(np.array(s)==1)[0]]
+            bias[0] = error[np.where(np.array(s)==0)[0]]
+            bias_diff = np.mean(bias[1]) - np.mean(bias[0])
+
+            # var1 = np.var(bias[1], ddof=1)
+            # var0 = np.var(bias[0], ddof=1)
+            # var = (var1 * (len(bias[1])-1) + var0 * (len(bias[0])-1))/(len(bias[1])+len(bias[0])-2)
+
         else:
             bias_diff = 0.0
             n = 0
@@ -38,7 +41,7 @@ class Metrics:
                         n += 1
                         bias_diff += diff_pred - diff_true
             bias_diff = bias_diff / n
-        sigma = np.std(self.y_pred - self.y, ddof = 1)
+        sigma = np.std(self.y_pred - self.y, ddof=1)
         if sigma:
             bias_diff = bias_diff / sigma
         else:
@@ -49,19 +52,21 @@ class Metrics:
     def RBT(self, s):
         # s is an array of numerical values of a sensitive attribute
         if len(np.unique(s)) == 2:
-            group0 = max(np.unique(s))
-            group1 = min(np.unique(s))
             error = np.array(self.y_pred) - np.array(self.y)
             bias = {}
-            bias[group0] = error[np.where(np.array(s) == group0)[0]]
-            bias[group1] = error[np.where(np.array(s) == group1)[0]]
-            bias_diff = np.mean(bias[group0]) - np.mean(bias[group1])
-            sigma = np.std(self.y_pred - self.y, ddof = 1)
-            if sigma:
-                bias_diff = bias_diff / (sigma*np.sqrt(1.0/len(bias[group0])+1.0/(len(bias[group1]))))
+            bias[1] = error[np.where(np.array(s) == 1)[0]]
+            bias[0] = error[np.where(np.array(s) == 0)[0]]
+            bias_diff = np.mean(bias[1]) - np.mean(bias[0])
+            var1 = np.var(bias[1], ddof=1)
+            var0 = np.var(bias[0], ddof=1)
+            var = var1/len(bias[1])+var0/len(bias[0])
+            if var>0:
+                bias_diff = bias_diff / np.sqrt(var)
+                dof = var ** 2 / ((var1 / len(bias[1])) ** 2 / (len(bias[1]) - 1) + (var0 / len(bias[0])) ** 2 / (
+                            len(bias[0]) - 1))
             else:
                 bias_diff = 0.0
-            dof = len(s)-2
+                dof = 1
         else:
             bias_diff = 0.0
             n = 0
@@ -80,6 +85,4 @@ class Metrics:
                 bias_diff = 0.0
             dof = len(s)-1
         p = t.sf(np.abs(bias_diff), dof)
-        if bias_diff < 0:
-            p = -p
         return p
