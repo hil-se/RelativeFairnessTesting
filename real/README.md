@@ -3,7 +3,7 @@
 #### Data (included in the [data/](https://github.com/hil-se/RelativeFairnessTesting/tree/main/real/data) folder)
 
  - [SCUT-FBP5500](https://github.com/HCIILAB/SCUT-FBP5500-Database-Release).
-   + [Selected_Ratings.csv](https://github.com/hil-se/RelativeFairnessTesting/blob/main/real/data/Selected_Ratings.csv) extracts P1, P2, P3, and Average ratings from the original data.
+   + [Ratings.csv](data/Ratings.csv) extracts ratings from the original data.
 
 #### Pre-Trained weights
 
@@ -23,7 +23,7 @@ mkdir checkpoint
 ```
 cd src
 ```
-4. Generate results in [results/](https://github.com/hil-se/RelativeFairnessTesting/tree/main/real/results)
+4. Generate results in [results/](results/)
 ```
 python main.py
 ```
