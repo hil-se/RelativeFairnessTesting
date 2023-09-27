@@ -7,17 +7,13 @@
 ## Use the resources available on this account
 #SBATCH -A loop
 
-## To send mail for updates on the job
-#SBATCH --mail-user=zxyvse@rit.edu
-#SBATCH --mail-type=ALL
-
 ## Standard out and Standard Error output files
 #SBATCH -o log/%J_%a.o
 #SBATCH -e log/%J_%a.e
 
 ## Request 1 Days, 0 Hours, 0 Minutes, 0 Seconds run time MAX,
 ## anything over will be KILLED
-#SBATCH -t 5-00:00:00
+#SBATCH -t 1-00:00:00
 
 ## Put in tier3 partition for testing small jobs, like this one
 ## But because our requested time is over 4 day, it won't run, so

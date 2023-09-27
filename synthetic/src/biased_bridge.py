@@ -67,14 +67,6 @@ class BiasedBridge:
             mu1, var1 = self.stats(group1_train, group1_test)
             size1 = len(group1_test)
             size0 = len(group0_test)
-            # # varA = (var1  + var0) / 2
-            # varB = (var1 * (len(group1_test) + len(group1_train) - 2) + var0 * (
-            #                 len(group0_test) + len(group0_train) - 2)) / (
-            #                 len(group1_test) + len(group1_train) + len(group0_test) + len(group0_train) - 4)
-            # varC = (var1 * (len(group1_test)) * (len(group1_train)) + var0 * (len(group0_test)) * (
-            #     len(group0_train))) / (
-            #                (len(group1_test)) * (len(group1_train)) + (len(group0_test)) * (
-            #            len(group0_train)))
             erbd = (mu1 - mu0) / np.sqrt((var0*(size0-1)+var1*(size1-1))/(size0+size1-2))
         else:
             bias_diff = 0.0

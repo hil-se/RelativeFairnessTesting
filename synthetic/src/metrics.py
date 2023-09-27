@@ -25,11 +25,6 @@ class Metrics:
             bias[1] = error[np.where(np.array(s)==1)[0]]
             bias[0] = error[np.where(np.array(s)==0)[0]]
             bias_diff = np.mean(bias[1]) - np.mean(bias[0])
-
-            # var1 = np.var(bias[1], ddof=1)
-            # var0 = np.var(bias[0], ddof=1)
-            # var = (var1 * (len(bias[1])-1) + var0 * (len(bias[0])-1))/(len(bias[1])+len(bias[0])-2)
-
         else:
             bias_diff = 0.0
             n = 0
