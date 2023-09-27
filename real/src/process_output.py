@@ -1,7 +1,6 @@
 import numpy as np
 from metrics import Metrics
 import pandas as pd
-from bridge import Bridge
 from biased_bridge import BiasedBridge
 from pdb import set_trace
 
