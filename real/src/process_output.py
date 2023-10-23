@@ -1,6 +1,7 @@
 import numpy as np
 from metrics import Metrics
 import pandas as pd
+from bridge import Bridge
 from biased_bridge import BiasedBridge
 from pdb import set_trace
 
@@ -15,12 +16,28 @@ def run(base="P1"):
         val = data['split'] == 2
         test = data['split'] == 0
         training = data['split'] > 0
+
+        # result = {"Pair": base, "Metric": "Train"}
+        # m = Metrics(data["base"][train], data['pred'][train])
+        # result["MAE"] = m.mae()
+        # for A in protected:
+        #     result[A] = "(%.2f) %.2f" % (m.RBT(data[A][train]), m.RBD(data[A][train]))
+        # results.append(result)
+
+
         # GT on training set
         result = {"Pair": base + "/" + target, "Metric": "GT Train"}
         m = Metrics(data["target"][training], data["base"][training])
         result["MAE"] = m.mae()
         for A in protected:
             result[A] = "(%.2f) %.2f" % (m.RBT(data[A][training]), m.RBD(data[A][training]))
+        results.append(result)
+        # GT on val set
+        result = {"Pair": base + "/" + target, "Metric": "GT Val"}
+        m = Metrics(data["target"][val], data["base"][val])
+        result["MAE"] = m.mae()
+        for A in protected:
+            result[A] = "(%.2f) %.2f" % (m.RBT(data[A][val]), m.RBD(data[A][val]))
         results.append(result)
         # GT on test set
         result = {"Pair": base + "/" + target, "Metric": "GT Test"}
@@ -38,10 +55,10 @@ def run(base="P1"):
         results.append(result)
         # predict test
         result = {"Pair": base + "/" + target, "Metric": "Biased Bridge"}
-        m = BiasedBridge(data['pred'][training] - data["base"][training], data['pred'][test] - data["target"][test])
+        m = BiasedBridge(data['pred'][val] - data["base"][val], data['pred'][test] - data["target"][test])
         result["MAE"] = 0.0
         for A in protected:
-            result[A] = "(%.2f) %.2f" % (m.RBT(data[A][training], data[A][test]), m.RBD(data[A][training], data[A][test]))
+            result[A] = "(%.2f) %.2f" % (m.RBT(data[A][val], data[A][test]), m.RBD(data[A][val], data[A][test]))
         results.append(result)
         # predict test bridge
         # result = {"Pair": base + "/" + target, "Metric": "Bridge"}
