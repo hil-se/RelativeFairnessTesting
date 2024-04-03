@@ -1,0 +1,13 @@
+Pair,Metric,MAE,US Degree
+Eval 2/Eval 1,GT Train,0.13,(0.03) -0.29
+Eval 2/Eval 1,GT Test,0.14,(0.23) -0.12
+Eval 2/Eval 1,Unbiased Bridge,0.26,(0.11) 0.21
+Eval 2/Eval 1,Biased Bridge,0.00,(0.43) 0.03
+Eval 2/Eval 2,GT Train,0.00,(0.50) 0.00
+Eval 2/Eval 2,GT Test,0.00,(0.50) 0.00
+Eval 2/Eval 2,Unbiased Bridge,0.28,(0.04) 0.30
+Eval 2/Eval 2,Biased Bridge,0.00,(0.29) 0.10
+Eval 2/Eval 3,GT Train,0.20,(0.27) 0.09
+Eval 2/Eval 3,GT Test,0.24,(0.09) 0.23
+Eval 2/Eval 3,Unbiased Bridge,0.29,(0.00) 0.49
+Eval 2/Eval 3,Biased Bridge,0.00,(0.06) 0.26

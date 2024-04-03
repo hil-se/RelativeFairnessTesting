@@ -1,0 +1,175 @@
+Eval 1,Eval 2,Eval 3,Area(s) of Interest,Faculty Identified,Institution Region (BS),Institution Ranking (BS),BS Major,BS GPA,Institution Region (MS),Institution Ranking (MS),MS Major,MS GPA,Int'l pubs,Research Experience,GRE Quan,GRE Ver,GRE AWA,GRE Total,TOEFL,IELTS,Has MS,US Degree
+2,1,2,"Security, ML, Programming",1,iran,222,Applied Computer Science,0.718,malaysia,2,Computer Science (Information Security),0.9475,1,0,167,159,4,326,107,,1,0
+2,2,2,AI,1,bangladesh,1,Robotics and Mechatronics Engineering,0.9625,,,,,1,0,168,160,4.5,328,,8,0,0
+0,0,0,"CV, Robotics, Programming Language, HCI, Data Management, ML, OS",0,nigeria,102,computer science,0.685,,,,,0,0,,,,,,,0,0
+0,0,0,"Data Science, ML, Business Analysis",0,nigeria,3,Computer Science,0.625,south africa,20,Information Technology,0.63,1,0,,,,,,,1,0
+2,2,2,"ML, NLP, Equation Systems, Data Science",0,iran,73,Electrical and Control Engineering,0.75,iran,8,Computer Science,0.85,1,0,170,167,5,337,108,,1,0
+1,1,1,"Medical Imaging, ML/DL",1,bangladesh,19,Applied Physics and Electronic Engineering,0.7425,china,117,Computer Science and Technology,0.87,1,0,,,,,,6.5,1,0
+2,1,2,"AI, ML, DL, CV, NLP",1,bangladesh,4,Computer Science and Engineering,0.8825,bangladesh,4,,,1,0,,,,,,6.5,1,0
+2,2,2,Cybersecurity,1,nigeria,8,Electrical and Electronics Engineering,0.94,us,153,Electrical and Computer Engineering,0.93,1,1,157,152,4,309,102,,1,1
+1,1,1,"AI, CV, Data Science",1,nigeria,30,Computer Science,0.974,,,,,0,1,157,159,4,316,96,,0,0
+2,1,2,"ML, AI, NLP",1,bangladesh,1,Computer Science and Engineering,0.9425,bangladesh,1,Computer Science,0.9125,1,1,159,151,3.5,310,102,,1,0
+1,1,1,SE,0,saudi arabia,21,Software Engineering,0.999,us,137,Software Engineering,1,0,0,144,133,2.5,277,,,1,1
+0,0,0,"Information storage and retrieval, Data Management",0,ghana,1,Information Studies,0.645,ghana,23,Information Technology,0.8,0,0,143,147,3,290,,,1,0
+1,1,1,Data Science,0,ghana,2,Actuarial Science,0.6584,ghana,1,MA Educational Leadership and Management,0.91,0,0,,,,,,,1,0
+1,1,1,"ML, AI, NLP",1,bangladesh,21,Computer Science and Engineering,0.82,,,,,1,0,157,144,3,301,,7,0,0
+1,1,2,"SE, Data Mining, ML, NLP",1,iran,4,Computer Engineering (Software),0.8,iran,9,Software Engineering,0.7975,1,0,163,134,2,297,84,,1,0
+2,2,2,Cybersecurity,0,iran,73,Applied Mathematics,0.6505,iran,6,IT Engineering- Information Security,3.7425,1,0,165,161,4,326,104,,1,0
+1,1,1,"Image Analysis, CV, AI",1,iran,115,Civil Engineering,0.74,iran,10,Environmental Engineering,0.845,1,0,,,,,,6,1,0
+2,2,2,"Health&medical Informatics, ML, DL, NLP",1,iran,4,Electrical Engineering,0.781,iran,4,Computer Engineering,0.7325,1,0,170,153,3,323,105,,1,0
+1,1,1,Computing and Information Systems,0,saudi arabia,33,software engineering,0.913,saudi arabia,2,Computer Science,0.99,1,0,,,,,,,1,0
+1,2,2,"AI, ML, DL, CV, Robotics",1,iran,17,Computer Engineering,0.879,,,,,0,0,160,155,4,315,111,,0,0
+1,1,1,"CV, DL",1,bangladesh,25,Computer Science and Engineering,0.985,,,,,1,0,161,148,3,309,96,,0,0
+1,1,1,"ML, DL, Math Modeling, Quantitative Finance, AstroPhysics",0,nepal,1,Physics,,,,,,0,0,,,,,99,,0,0
+0,0,1,Cybersecurity,0,ghana,2,computer science and information systems,0.675,,,,,0,0,,,,,,,0,0
+1,1,1,"HCI, XR",1,us,89,Computer Science,0.8,,,,,0,1,,,,,,,0,1
+1,2,2,"HCI, Accessibility",1,russia,3,,,russia,1,Psychology,1,1,0,,,,,95,,1,0
+1,1,1,CV,1,china,174,Accountin,0.77,uk,20,Computing with placement,,0,0,,,,,,6.5,1,0
+0,0,0,"HCI, CV, Signal Processing",0,india,68,Computer Application,0.791,uk,60,Computer Science,0.8325,0,0,141,130,2.5,271,,,1,0
+1,1,1,"CV, NLP, HCI, Medical Informatics",1,bangladesh,59,Computer Science and Engineering,0.9275,bangladesh,29,,,1,0,155,142,3,297,,7,1,0
+2,2,2,"NLP, ML",1,bangladesh,21,Electronics and Communication Engineering,0.8225,us,77,Information Sciences & Technology,1,1,0,,,,,,,1,1
+0,0,0,Cloud Computing,0,sri lanka,4,,,uk,101,Information Technology,0.63,1,0,,,,,,,1,0
+1,1,2,"CV, NLP",1,nepal,1,Bachelor of Electronics and Communication Engineering,0.7392,,,,,0,0,163,152,4,315,94,,0,0
+1,1,2,"ML, DL",1,nepal,1,Computer Engineering,0.78,,,,,0,0,160,148,3,308,97,,0,0
+1,1,1,"Data Mining, ML, NLP",0,ghana,2,Computer Engineering,0.7518,,,,,1,0,157,152,4,309,,,0,0
+1,1,1,"Distributed Computing, Theory",1,iran,,Computer Software Technology Engineering,0.7545,iran,115,Computer Software Engineering,0.8285,0,0,159,137,2,296,,6.5,1,0
+1,1,1,SE,1,tunisia,25,Information Technology,0.751,,,,,0,0,161,150,3,311,,7,0,0
+1,1,1,HCI,0,china,659,Information Engineering,0.78,regional universities south,9,Interactive design and game development,0.975,0,0,,,,,,,1,1
+2,2,2,NLP,1,india,10,Computer Science and Engineering,0.94,,,,,0,1,170,158,3.5,328,110,,0,0
+0,1,1,Cybersecurity,1,nigeria,3,English and Literary Studies,0.884,,,,,1,0,137,150,4.5,287,,8,0,0
+1,1,1,"Cybersecurity, Data and SE",0,nigeria,22,Computer Science,1,russia,5,Cyber Security,1,0,0,,,,,,,1,0
+1,1,1,Data Analysis,0,nigeria,22,computer scinence,0.735,,,,,0,0,165,162,4.5,327,,,0,0
+1,1,2,"HCI, ML, AI",1,bangladesh,2,Computer Science and Engineering,0.8775,,,,,1,0,159,152,3.5,311,108,,0,0
+1,1,1,"Data Science, ML, AI, Gaming, Cybersecurity",0,iran,91,Computer Software Technology Engineering,0.759,iran,11,Computer Engineering - Security Engineering,0.786,0,0,,,,,105,,1,0
+1,1,1,"HCI, Accessibility, AR/VR design",1,nigeria,1,Electrical & Electronic Engineering,0.9429,,,,,0,1,159,152,4,311,101,,0,0
+1,2,1,"HCI, UX, VR",1,uk,128,Business Management,1,uk,32,Psychology,0.74,0,1,,,,,,,1,0
+1,0,1,"AI, ML, DL, medical image analysis, health",1,iran,25,Statistics,0.791,iran,8,Data Science,0.95,1,0,158,146,3,304,,7,1,0
+2,1,2,"SE, Cybersecurity",1,azerbaijan,12,Information Security,0.9434,,,,,0,0,162,155,3.5,317,,8,0,0
+1,2,2,"NLP, Information Retrieval",1,nepal,1,Computer Engineering,0.7472,,,,,1,0,157,153,3,310,,7,0,0
+0,1,0,"NLP, ML/DL",0,nepal,3,Software Engineering,0.7425,regional universities midwest,127,Computer Science,0.9125,1,0,148,142,2.5,290,77,,1,1
+0,1,0,"AI, CV, ML",1,india,85,Computer Science & Engineering,0.6873,india,81,Computer Science & Engineering,0.775,1,0,144,134,3,278,72,,1,0
+2,1,2,HCI,0,us,112,Game Design and Development,0.96,,,,,1,1,161,162,4.5,323,,,0,1
+1,1,1,"ML, DL, CV",1,nepal,1,Computer Engineering,17.39,,,,,1,0,165,138,3,303,,7,0,0
+1,1,1,"AI, CV, NLP, DL",0,india,81,Electronics Engineering,0.613,india,32,Software Systems,,1,0,,,,,,,1,0
+1,1,2,"ML, CV, AI",0,russia,10,Optotechnics,0.96,us,842,Computer Science,1,1,0,154,149,2.5,303,,,1,1
+1,1,1,"AI, ML, HCI, Computer Visualization",1,regional universities north,37,Computer Science and Information Technology,0.9625,,,,,0,0,149,144,4.5,293,,,0,1
+1,1,2,"Data Science, ML, DL, Optimization",1,iran,1,Engineering Science,0.8425,,,,,1,0,,,,,93,,0,0
+1,1,1,"ML, Medical Image Understanding, NLP, Knowledge Graph",1,iran,10,Computer Engineering,0.806,,,,,0,0,157,141,3.5,298,,7,0,0
+1,1,1,"CV, ML, Big Data",0,china,467,Software Engineering,0.9144,us,124,Computer Science,0.9722,0,0,,,,,,,1,1
+1,1,1,"ML, DL, CV, Health Informatics",1,bangladesh,21,Computer Science & Engineering,0.78,,,,,1,0,158,135,3,293,,6,0,0
+2,1,2,"ML, Bioinformatics, Medical Imaging, Computational Biology, NLP, DL, AI",1,bangladesh,21,Computer Science and Engineering,0.9575,,,,,1,0,,,,,,6.5,0,0
+2,2,2,"ML, CV, Medical Image Anallysis, NLP",1,iran,8,Computer Engineering,0.914,,,,,1,1,,,,,99,,0,0
+1,1,1,"AI, ML/DL, Biomedicine",0,pakista,65,Computer Science,0.695,malaysia,12,Information Technology,,1,1,,,,,,,1,0
+2,2,1,"UI/UX, Design, Motion Graphic, 3D",0,china,158,Chemistry,0.745,us,112,Visual Communication Design,0.8925,1,0,,,,,,6.5,1,1
+1,1,1,AI,0,national liberal arts college,54,Engineering,1,us,178,Mathematics,0.805,1,1,162,159,4,321,,,1,1
+1,1,1,"AI, ML/DL, Medical Image Analysis",1,china,248,Automation,0.7,china,6,Mechanical and antomation Engineering,,1,0,,,,,,6.5,1,0
+1,1,1,"HCI, Accessibility",1,bangladesh,7,Computer Science and Engineering,0.8175,us,202,Human-Computer Interaction,0.95,1,0,,,,,,7,1,1
+1,1,1,"Data Analysis, System Optimization, Financial Engineering",1,iran,4,Industrial Engineering,0.6805,,,,,0,0,,,,,88,,0,0
+2,2,2,"ML, algorithms",0,china,1,Mathematics,0.88,canada,2,Data Science,0.95,0,0,169,151,3.5,320,106,,1,0
+2,1,1,HCI,1,pakistan,109,Bachelor of Arts (Bachelor of Design),0.925,australia,2,Interaction Design & Electronic Arts,0.75,0,0,144,153,4,297,109,,1,0
+2,2,2,"HCI, Social Computing, AI Ethnics",0,iran,4,Computer Engineering,0.9035,,,,,1,0,,,,,,8,0,0
+1,2,1,CV,1,bangladesh,25,Computer Science and Engineering,0.99,,,,,1,0,169,151,3.5,320,96,,0,0
+0,0,0,"AI, Data Science, DL, ML",1,bangladesh,36,Electrical and Electronic Engineering,0.74,,,,,0,0,159,148,3.5,307,82,,0,0
+1,1,1,"Computational Modeling, Big Data, ML, Predictive Analytics",0,iran,21,Management,0.6845,us,34,Data Science,0.85,1,0,162,155,4,317,111,,1,1
+1,1,1,"AI, ML, Data Mining, Computaional Biology, Theory&Algorithms",1,iran,115,Computer Engineering,0.8345,,,,,0,0,,,,,100,,0,0
+1,1,1,"CV Image Processing for medicine, Intelligent Support System",1,bangladesh,7,Computer Science,0.925,,,,,1,0,155,152,3.5,307,,7.5,0,0
+0,0,0,"CS, IoT",0,china,179,Computer Science and Technology,0.7475,china,179,Computer Science and Technology,,0,0,,,,,,6.5,1,0
+1,1,1,"Graph theory, Data Mining, ML",1,iran,77,Computer Science,0.7955,iran,22,Decision Science and Knowledge Engineering,0.868,0,1,165,130,3,295,91,,1,0
+2,2,2,"AI, CV",1,india,4,Computer Science and Engineering,0.837,us,44,Computer Science,0.93,1,0,167,157,3.5,324,115,,1,1
+1,1,1,"ML, DL, CV",1,india,12,Electronics and Telecommunication,0.6653,india,50,Signal Processing-Electronics & Telecommunication,0.813,1,0,158,148,3,306,,7.5,1,0
+1,1,1,"CV&Image Processing, ML&Data Science, NLP, Robotics",0,iran,25,Computer Engineering,0.8615,,,,,0,0,162,144,3,306,97,,0,0
+2,2,2,"HCI, DL",1,bangladesh,2,Electrical and Electronic Engineering,0.9525,,,,,1,0,168,163,4.5,331,115,,0,0
+1,1,1,Cybersecurity,1,nepal,1,Computer Engineering,0.6424,,,,,0,0,166,161,4.5,327,106,,0,0
+1,1,2,"ML, Optimization, AI, Data Science",1,iran,115,Computer Engineering,0.9405,,,,,0,0,,,,,93,,0,0
+2,2,1,"ML, Medical Imaging",1,us,49,Computer and Information Science,0.7308,us,112,Information Technology and Analytics,0.925,0,0,,,,,,,1,1
+1,1,1,"ML, Data Mining, NLP, Optimization",1,pakistan,23,Computer Software Engineering,0.725,japan,10,Computer Science,0.87,1,0,161,154,4,315,112,,1,0
+2,2,2,"ML, Health",0,us,51,"Computer Science, Mathematics",0.8825,us,22,Computer Science,0.98,0,0,170,163,3,333,,,1,1
+0,1,1,"AR, HCI",1,germany,1,Architecture,0.625,germany,7,Architecture,0.85,0,0,,,,,,8,1,0
+2,2,2,"HCI, Accessiblity",1,india,187,Computer Engineering,0.946,us,112,Human Computer Interaction,0.9825,0,0,158,144,3.5,302,100,,1,1
+2,2,2,"Data Science, ML",1,us,112,Computer Science,0.8725,,,,,1,1,157,149,4.5,306,,,0,1
+0,0,1,Theory,0,china,4,Pure & Applied Mathematics,0.625,china,4,Computer and software engineering,0.75,1,0,,,,,570,,1,0
+2,1,1,"Trustworthy ML, SE, Data Analysis",0,us,62,Economics,0.725,us,27,Computer Science,0.875,0,0,170,161,3.5,331,,,1,1
+1,1,1,"ML, CV",1,china,323,Computer science and technology,0.7925,us,62,Computer Science,0.9825,0,1,163,138,2.5,301,,,1,1
+1,1,1,Theory and Algorithm,1,us,13,Computer Science,0.8075,,,,,0,0,168,150,,318,,,0,1
+1,1,1,"AI, ML, Data Science, CV, NLP",1,china,27,Electronic Information Engineering,0.815,us,25,Artificial Intelligence for Product Innovation,0.9475,0,0,169,151,3,320,,,1,1
+1,1,1,"DL, CV",0,nepal,2,Computer Engineering,0.85,,,,,0,0,163,153,3,316,103,,0,0
+0,0,0,"E-learning, Knowledge Mining",0,us,,Computer Information Systems,0.825,uk,65,MSc. Management of Information Technology,,0,0,,,,,68,,1,1
+2,1,2,"SE, Accessibility, HCI, ML, AI",0,iraq,16,Software Engineering,0.73,us,112,Software Engineering,1,0,1,145,143,3.5,288,96,,1,1
+1,0,0,"Crime Science, Data Science",0,dubai,19,Software Engineering,0.8375,uk,74,Enterprise and Innovation,,0,0,,,,,,6.5,1,0
+2,1,2,"HCI, UX, Accessibility",1,iran,8,Computer Science,0.842,iran,8,Computer Science - Algorithm and Computation Theory,0.9495,0,0,159,149,3,308,109,,1,0
+2,2,2,HCI,1,regional universities west,9,Computer Science,0.95,regional universities west,9,Computer Science,1,0,0,156,161,4.5,317,,,1,1
+1,1,1,"AI, Data Science, ML",0,south africa,13,Computer Systems,,south africa,13,Master of Computing in Computer Systems Engineering,,1,0,,,,,,,1,0
+2,2,2,"HCI, NLP, ML, SE",1,bangladesh,1,Computer Science and Engineering,0.915,bangladesh,1,Computer Science and Engineering,0.9075,0,0,,,,,100,,1,0
+0,1,1,SE,0,kenya,44,Computer Technology,,kenya,6,BUSINESS INTELLIGENCE AND DATA ANALYTICS,0.6444,0,0,,,,,,,1,0
+1,1,1,"NLP, AI, ML, Affective Computing",1,ghana,27,Computer Science,0.8475,ghana,2,Information Technology,0.6223,1,0,,,,,,,1,0
+1,1,1,"ML, Data Science, Operation, Optimization, Decision-making, Supply Chain, Transportation, Autonomous Vehicle",0,iran,1,Industrial Engineering,0.838,,,,,0,0,,,,,103,,0,0
+1,1,1,"Systems, Networking, Security, Applications of AI, ML",0,iran,76,Electrical Engineering,0.787,,,,,0,0,,,,,93,,0,0
+1,1,1,SE,0,us,63,Computer Science,0.519,us,83,Software Engineering,0.775,0,0,,,,,,,1,1
+1,1,1,"NLP, CV, ML, DL, Image Processing, Health",0,iran,40,Computer Science,0.684,iran,139,Software Engineering,0.907,0,0,158,143,2,301,83,,1,0
+2,2,2,CV for healthcare,1,nigeria,2,Dentistry,,us,112,Bioinformatics,0.9875,1,0,152,151,3,303,99,,1,1
+2,1,2,HCI,1,us (top in undergrad engineering programs),3,Electrical and Computer Engineering,0.99,,,,,0,1,163,163,4,326,,,0,1
+1,2,1,Cybersecurity,0,turkey,39,Computer Engineering,0.88,turkey,61,Computer Engineering,0.91,1,0,160,130,1.5,290,,7,1,0
+2,2,2,NLP,1,india,,Information Technology,0.811,us,34,Computer Science,,1,0,164,154,4,318,102,,1,1
+0,1,1,Computer Engineering,1,nepal,1,Computer Engineering,0.7647,,,,,0,0,159,143,3,302,,6.5,0,0
+2,2,2,"DL, Image Processing",0,us,182,Computer Science,0.9277,south korea,20,AI-Application,0.9444,1,0,164,154,3.5,318,,,1,1
+0,0,0,Cybersecurity,0,regional universities south,16,Business Administration,0.6428,us,299,Cybersecurity,0.95,0,0,,,,,,,1,1
+0,1,0,"Cybersecurity, ML",1,nepal,1,Computer Science and Information Technology,0.6643,,,,,0,0,144,134,2.5,278,,6.5,0,0
+0,0,0,Public Relations,0,iran,37,Public Relations management,0.8985,iran,226,International Business Management,0.7855,0,0,,,,,,7,1,0
+2,2,2,NLP,1,regional colleges north,2,Electrical Engineering,0.9375,,,,,0,0,170,154,4.5,324,118,,0,1
+1,1,1,"HCI, SE, ML",0,china,478,Software Engineering,0.86,us,121,Software Engineering,0.945,0,0,166,152,3.5,318,,,1,1
+2,2,2,"NLP, HCI",1,regional colleges west,16,Computer Science,0.7817,regional colleges west,16,Computer Science,0.99,1,1,167,155,4,322,,,1,1
+1,1,1,DL and its applications,1,bangladesh,1,Computer Science and Engineering,0.8775,,,,,0,0,158,149,3.5,307,97,,0,0
+1,1,2,ML,1,nepal,1,Computer Engineering,0.7346,,,,,0,0,161,153,4,314,102,,0,0
+1,1,1,"Accessibility, HCI",1,india,182,Mechanical Engineering,0.64,india design,1,Universal Design,0.79,0,1,157,150,3,307,101,,1,0
+1,1,1,"Data Analysis, Network, AI, ML, Data Science, Cloud Computing, DL",0,iran,36,Information Technology Engineering,0.799,iran,4,Computer Networks,0.8515,0,0,164,138,2,302,,6.5,1,0
+1,1,1,Accessibility,1,us,112,BS Science in Web and Mobile Computing,0.8775,,,,,0,0,,,,,,,0,1
+2,1,2,Theory,0,us,112,Computer Science,0.9775,,,,,0,0,168,159,4.5,327,,,0,1
+2,2,2,"Data Mining, Information Retrieval, ML",1,bangladesh,7,Computer Science and Engineering,0.9875,,,,,1,0,167,153,4,320,,8,0,0
+2,2,2,"AI, ML, DL",1,bangladesh,1,Software Engineering,0.8475,bangladesh,1,Software Engineering,0.9525,1,0,155,156,4,311,111,,1,0
+1,1,2,AI,0,bangladesh,25,Software Engineering,0.965,,,,,0,0,163,147,4,310,102,,0,0
+2,2,2,"ML, Data Analysis, Healthcare",0,germany,,Applied Computer Science,1,us,112,Data Science,1,0,0,,,,,103,,1,1
+1,1,1,"ML, Data Mining",1,iran,1,Mathematics and Applications,0.6395,iran,8,Computer Science,0.942,0,0,,,,,90,,1,0
+1,2,1,"Data Science, AI",0,pakistan,40,Computer Systems Engineering,0.8225,pakistan,40,Computer Systems Engineering,0.9725,1,0,,,,,,,1,0
+1,1,1,Management,0,iran,37,Cooperative Management,0.8685,iran,18,IT Management-Knowledge Management(KM),0.857,1,0,,,,,,,1,0
+2,2,2,"HCI, Accessibility, Visual Art",0,china,75,Software Engineering,0.7525,us,112,Human-Computer Interaction,1,0,0,170,161,4,331,88,,1,1
+1,1,1,"ML, DL",1,india,251,Electronics Engineering,0.686,india,50,Signal Processing - Electromics and Telecommunication Engineering,0.765,1,0,160,152,3,312,,7.5,1,0
+1,1,1,"CG, Multimodal Human Sensing, NLP, AI",1,nepal,1,Electronics & Communication Engineering,16.7525,nepal,3,Computer Engineering,0.975,0,0,159,151,4,310,93,,1,0
+0,1,0,"CV, Robotics, AI, ML",1,india,187,Electrical Engineering,0.761,us,337,Computer Science,0.8475,1,0,,,,,,,1,1
+1,1,1,"Telecommunication, Network, Systems",0,china,263,Mathematics and applied mathematics,0.7875,us,62,Telecommunications,0.8175,0,0,170,151,3.5,321,92,,1,1
+2,2,2,ML,0,us,51,Computer Science,0.775,us,7,Computer Science,0.9075,1,0,169,148,3,317,,,1,1
+1,1,1,"AI, CV, DL, Medical Imaging, Data Analysis",1,nepal,1,Mechanical Engineering,0.7116,,,,,0,0,162,157,4,319,107,,0,0
+0,1,1,"Wireless Sensor Network, Wireless Security, AI, ML, Mobile Computing, Cryptography, Image Signal Processing, SE, Computational Material Science",0,india,35,"Computer Science, Physics",17.37,india,93,Wireless Communication and Computing,0.77,1,0,,,,,,,1,0
+1,1,2,"SE, Systems",1,india,322,Microbiology,0.5367,india,158,Computer scinence,0.964,0,0,146,138,3,284,,6.5,1,0
+2,2,2,"Theory, Distributed Algorithms",1,us,112,Computer Science,0.995,,,,,0,1,168,170,5.5,338,,,0,1
+1,1,1,"ML, Data Science, AI, Data Mining, Algorithms, Cybersecurity, Fuzzy Logic",0,nigeria,16,Computer Science,0.7975,nigeria,5,Computer science,1,1,0,,,,,,,1,0
+2,2,2,"AI, ML",1,us,77,Computer Engineering,0.675,us,55,Computer science and Engineering,0.89,0,0,164,147,3,311,,,1,1
+1,1,1,"HCI, Accessibility, Design",0,china,592,Industrial Design,0.915,us,44,Industrial Design,0.935,1,1,159,151,3,310,97,,1,1
+1,1,1,"CV, Medical Imaging, DL",1,india,201,Electronics and Telecommunication,0.66,us,112,Computer Science,0.9025,0,0,159,149,3.5,308,99,,1,1
+1,1,1,"Systems, Data Science, AI",1,nepal,1,Electronics And Communication Engineering,0.7932,,,,,0,0,163,149,3,312,,7.5,0,0
+1,1,1,"HCI, Accessibility",1,nigeria,4,Electronic and Electrical Engineering,0.812,,,,,0,1,159,149,3.5,308,93,,0,0
+2,2,2,Accessibility,1,us,,Architecture,0.915,us,18,Interdisciplinary Studies,0.91,1,0,,,,,,,1,1
+1,1,1,"AI, Healthcare",1,nepal,1,Electronics and Communication Engineering,0.7502,,,,,1,0,159,147,3.5,306,96,,0,0
+1,1,1,"Data Mining, AI, NLP, ML",1,nepal,1,Computer Engineering,0.7786,,,,,1,0,170,149,4,319,107,,0,0
+1,1,2,"AI, CV, Multimodal Learning",1,nepal,1,Computer Engineering,0.7975,,,,,1,0,,,,,,7.5,0,0
+1,1,2,"Data Management, Social Computing",1,benin,,Computer Science,0.862,nigeria,84,Computer Science,0.776,0,0,170,160,3,330,,,1,0
+0,1,0,Data Science,0,ghana,1,Computer Science,0.655,south africa,2,Epidemiology (Research Database Management),0.635,1,0,,,,,,,1,0
+1,1,2,NLP,1,india,49,Computer Science and Engineering,0.934,,,,,0,0,161,151,4.5,312,109,,0,0
+2,2,1,"AI, ML",1,india,95,Mechanical Engineering,0.699,,,Computer Science,0.98,0,0,164,150,3.5,314,98,,0,0
+1,1,1,"ML, AI, Robotics",1,pakistan,7,Electrical Engineering,0.88,pakistan,6,Electrical Engineering (Embedded),0.9475,1,1,167,145,3.5,312,,7.5,1,0
+1,1,2,"finicial math, AI, NLP, Data Science",0,sri lanka,1,Statistics,0.8395,,,,,1,0,153,142,3.5,295,,7,0,0
+1,2,2,"AI, ML",1,china,42,Computer Science and Technology,0.7725,us,16,Information Systems Management,0.935,1,0,170,165,3.5,335,112,,1,1
+2,2,2,Programming Language Theory,1,us,103,Mathematics and Computer Science,0.8125,us,112,Computer Science,0.975,0,0,,,,,,,1,1
+1,1,1,Cybersecurity,1,us,76,Computer Science,0.76,us,62,Computer Science,0.9575,0,0,162,148,3,310,,,1,1
+2,2,2,NLP,1,china,231,Arabic,0.9775,us,88,Computational Linguistics,0.9515,0,0,169,164,4.5,333,,,1,1
+2,2,2,"AI, ML",1,china,162,Electronic Information Engineering,0.905,china,11,Electronics and Communication Engineering,0.755,1,0,170,160,3,330,97,,1,0
+2,1,2,"VR, AR, HCI, UX",0,us,62,Computer Engineering,0.71,us,112,Human Computer interactions,0.965,0,0,169,168,4,337,,,1,1
+1,1,1,"AI, CV, Robotics, Medicine",0,china,306,Electronic Information Engineering,0.75,us,89,Engineering Science,0.875,1,0,158,141,3,299,,,1,1
+1,2,2,"Statistics, Big Data",1,china,21,Statistics,0.9,china,21,Statistics,0.925,0,0,170,141,3,311,,7.5,1,0
+1,1,1,"ML, AI",1,china,325,Computer Science and Technology,0.9325,,,,,0,0,168,146,3,314,100,,0,0
+0,1,1,Cybersecurity,0,china,115,Telecommunications Engineering,0.695,us,62,Telecommunications,0.9197,1,0,160,132,3,292,,,1,1
+2,2,2,HCI,1,us,151,Digital Communication Arts,0.82,us,112,Human-Computer Interaction,0.95,0,1,,,,,,,1,1
+2,2,2,"AI, ML, Medical Imaging",1,us national liberal arts colleges,34,Computer Science Engineering,0.9275,,,,,1,0,170,155,3.5,325,108,,0,1
+1,1,1,"Data Mining, ML, CV",0,china,348,Electric engineering and automation,0.95,uk,14,Computational Intelligence and Robotics,0.85,0,0,,,,,92,,1,0
+1,1,2,"AI, Data Mining, Reinforcement Learning",1,china,10,Computer Science & Technology,0.8523,,,,,0,0,,,,,93,,0,0
+1,2,2,"Data Privacy, System Safety",1,china,102,Mathematics and Applied Mathematics,0.75,china,26,Software Engineering,0.73,1,0,,,,,,6.5,1,0
+1,1,2,ML,1,us,112,Applied Mathematics,0.855,,,,,0,0,,,,,,,0,1
