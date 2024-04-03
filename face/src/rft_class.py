@@ -71,22 +71,8 @@ class RelativeFairnessTesting():
                     result[A] = "(%.2f) %.2f" % (
                     m.RBT(self.data[A][val], self.data[A][test]), m.RBD(self.data[A][val], self.data[A][test]))
                 results.append(result)
-                ######
-                output = {}
-                for A in self.protected:
-                    output[A] = self.data[A]
-                output["base"] = self.data[base]
-                output["target"] = self.data[target]
-                output["pred"] = self.model.decision_function(self.features).flatten()
-                output["split"] = [1 if i in train else 2 if i in val else 0 for i in range(len(output["base"]))]
-                df_output = pd.DataFrame(output)
-                df_output.to_csv("../outputs/" + base + "_" + target + ".csv", index=False)
-                df_output = ''
-                #######
-
-
             df = pd.DataFrame(results)
-            df.to_csv("../results/result_" + base + ".csv", index=False)
+            df.to_csv("../results/result_class_" + base + ".csv", index=False)
             df = ''
         return results
 
