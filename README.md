@@ -3,7 +3,7 @@
 Test relative fairness between two decision sets made on different data.
 
 #### Experiments on a face beauty data with real human decisions
-[./real/](real/)
+[./FaceBeauty/](FaceBeauty/)
  
 
 #### Experiments on eight datasets with injected biases
