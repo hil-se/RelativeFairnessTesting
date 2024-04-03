@@ -21,7 +21,7 @@ mkdir checkpoint
 2. Download the pre-trained weights of VGG-16 model [vgg_face_weights.h5](https://github.com/serengil/deepface_models/releases/download/v1.0/vgg_face_weights.h5) and put it under _checkpoint/_
 3. Navigate to the source code:
 ```
-cd src
+cd face/src
 ```
 4. Generate results in [results/](results/)
 ```
