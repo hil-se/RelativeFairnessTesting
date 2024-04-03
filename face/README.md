@@ -23,8 +23,12 @@ mkdir checkpoint
 ```
 cd face/src
 ```
-4. Generate results in [results/](results/)
+4. Generate regression results in [results/](results/)
 ```
 python main.py
+```
+5. Generate binary classification results in [results/](results/)
+```
+python main_class.py
 ```
 
