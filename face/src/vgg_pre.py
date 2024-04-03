@@ -1,5 +1,4 @@
 import tensorflow as tf
-import numpy as np
 
 class VGG_Pre:
     def __init__(self, start_size = 64, input_shape = (224, 224, 3)):
@@ -79,7 +78,7 @@ class VGG_Pre:
         lr_reduce = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', patience=10, verbose=1, mode='auto',
                                                          min_lr=5e-5)
 
-        checkpointer = tf.keras.callbacks.ModelCheckpoint(filepath='checkpoint/attractiveness.hdf5'
+        checkpointer = tf.keras.callbacks.ModelCheckpoint(filepath='checkpoint/attractiveness.keras'
                                                           , monitor="val_loss", verbose=1
                                                           , save_best_only=True, mode='auto'
                                                           )

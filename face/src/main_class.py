@@ -1,4 +1,4 @@
-from rft import RelativeFairnessTesting
+from rft_class import RelativeFairnessTesting
 import time
 import numpy as np
 
@@ -9,6 +9,7 @@ def run():
     exp.run()
     runtime = time.time()-start
     print(runtime)
+
 
 if __name__ == "__main__":
     run()

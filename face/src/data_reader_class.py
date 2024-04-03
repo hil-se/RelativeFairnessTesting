@@ -2,7 +2,7 @@ import pandas as pd
 import tensorflow as tf
 
 
-def load_scut(rating_cols = ["P1", "P2", "P3", "Average"]):
+def load_scut(rating_cols = ["P1", "P2", "P5", "P10", "Average"]):
 
     def retrievePixels(path):
         img = tf.keras.utils.load_img("../data/images/" + path, target_size=(224, 224), grayscale=False)
@@ -11,8 +11,9 @@ def load_scut(rating_cols = ["P1", "P2", "P3", "Average"]):
 
     data0 = pd.read_csv('../data/Ratings.csv')
     data = pd.DataFrame({"Filename": data0["Filename"]})
+    # discretize ratings (>3):
     for col in rating_cols:
-        data[col] = data0[col]
+        data[col] = data0[col].apply(lambda x: 1 if x > 3.0 else 0)
 
     # extract sensitive attributes (Male=1, Female=0, Asian=1, Caucasian=0)
     sex = []

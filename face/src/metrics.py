@@ -7,15 +7,11 @@ class Metrics:
         self.y = y
         self.y_pred = y_pred
 
-    # def mse(self):
-    #     return sklearn.metrics.mean_squared_error(self.y, self.y_pred)
 
     def mae(self):
         return np.sum(np.abs(np.array(self.y) - np.array(self.y_pred)))/len(self.y)
         # return sklearn.metrics.mean_absolute_error(self.y, self.y_pred)
 
-    # def r2(self):
-    #     return sklearn.metrics.r2_score(self.y, self.y_pred)
 
     def RBD(self, s):
         # s is an array of numerical values of a sensitive attribute
