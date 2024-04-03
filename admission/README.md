@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 1. Navigate to the source code:
 ```
-cd src
+cd admission/src
 ```
 2. Generate regression results in [results/](results/)
 ```
