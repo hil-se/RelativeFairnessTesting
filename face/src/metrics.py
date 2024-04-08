@@ -10,7 +10,6 @@ class Metrics:
 
     def mae(self):
         return np.sum(np.abs(np.array(self.y) - np.array(self.y_pred)))/len(self.y)
-        # return sklearn.metrics.mean_absolute_error(self.y, self.y_pred)
 
 
     def RBD(self, s):

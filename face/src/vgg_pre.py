@@ -82,9 +82,10 @@ class VGG_Pre:
                                                           , monitor="val_loss", verbose=1
                                                           , save_best_only=True, mode='auto'
                                                           )
-        history = self.model.fit(X, y, sample_weight=sample_weight, callbacks=[lr_reduce, checkpointer],
-                                 validation_data=(X_val, y_val), batch_size=10, epochs=1000)
-        print(history.history)
+        self.model.fit(X, y, sample_weight=sample_weight, callbacks=[lr_reduce, checkpointer],
+                                 validation_data=(X_val, y_val), batch_size=10, epochs=200)
+        self.load_model('checkpoint/attractiveness.keras')
+
 
     def predict(self, X):
         return self.decision_function(X)

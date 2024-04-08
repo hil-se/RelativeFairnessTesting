@@ -1,0 +1,18 @@
+Pair,Metric,Accuracy,sex,race
+Average,Train,1.00,(0.50) 0.00,(0.50) 0.00
+Average/P1,GT Train,0.80,(0.00) -0.24,(0.00) -0.09
+Average/P1,GT Test,0.80,(0.00) -0.16,(0.13) -0.08
+Average/P1,Unbiased Bridge,0.79,(0.00) -0.28,(0.24) -0.05
+Average/P1,Biased Bridge,1.00,(0.00) -0.18,(0.14) -0.08
+Average/P2,GT Train,0.85,(0.00) -0.18,(0.00) 0.09
+Average/P2,GT Test,0.85,(0.01) -0.15,(0.44) 0.01
+Average/P2,Unbiased Bridge,0.84,(0.00) -0.30,(0.26) 0.04
+Average/P2,Biased Bridge,1.00,(0.00) -0.18,(0.46) -0.01
+Average/P3,GT Train,0.86,(0.00) -0.29,(0.06) 0.06
+Average/P3,GT Test,0.87,(0.00) -0.22,(0.46) -0.01
+Average/P3,Unbiased Bridge,0.83,(0.00) -0.33,(0.38) 0.02
+Average/P3,Biased Bridge,1.00,(0.00) -0.22,(0.40) -0.02
+Average/Average,GT Train,1.00,(0.50) 0.00,(0.50) 0.00
+Average/Average,GT Test,1.00,(0.50) 0.00,(0.50) 0.00
+Average/Average,Unbiased Bridge,0.88,(0.00) -0.17,(0.31) 0.04
+Average/Average,Biased Bridge,1.00,(0.12) -0.07,(0.42) -0.01

@@ -88,18 +88,17 @@ class VGG_Pre:
         lr_reduce = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', patience=10, verbose=1, mode='auto',
                                                          min_lr=5e-5)
 
-        checkpointer = tf.keras.callbacks.ModelCheckpoint(filepath='checkpoint/attractiveness.keras'
+        checkpointer = tf.keras.callbacks.ModelCheckpoint(filepath='checkpoint/attractiveness_class.keras'
                                                           , monitor="val_loss", verbose=1
                                                           , save_best_only=True, mode='auto'
                                                           )
         earlystop = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=50, min_delta=1e-4)
 
-        history = self.model.fit(X, y, sample_weight=sample_weight, callbacks=[lr_reduce, checkpointer, earlystop],
-                                 validation_data=(X_val, y_val, val_sample_weights), batch_size=100, epochs=1000, verbose=1)
+        self.model.fit(X, y, sample_weight=sample_weight, callbacks=[lr_reduce, checkpointer, earlystop],
+                                 validation_data=(X_val, y_val, val_sample_weights), batch_size=100, epochs=200, verbose=1)
 
 
-        self.load_model('checkpoint/attractiveness.keras')
-        print(history.history)
+        self.load_model('checkpoint/attractiveness_class.keras')
 
 
     def predict(self, X):
