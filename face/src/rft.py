@@ -31,43 +31,65 @@ class RelativeFairnessTesting():
             self.learn(X_train, y_train, X_val, y_val)
             preds = self.model.decision_function(self.features).flatten()
 
-            m = Metrics(self.data[base][train], preds[train])
-            result = {"Pair": base, "Metric": "Train"}
-            result["MAE"] = "%.2f" %m.mae()
-            for A in self.protected:
-                result[A] = "(%.2f) %.2f" % (m.RBT(self.data[A][train]), m.RBD(self.data[A][train]))
-            results.append(result)
-
             for target in self.rating_cols:
                 # GT on training set
-                result = {"Pair": base+"/"+target, "Metric": "GT Train"}
+                result = {"Pair": base + "/" + target, "Metric": "Label Train"}
                 m = Metrics(self.data[target][training], self.data[base][training])
-                result["MAE"] = "%.2f" %m.mae()
+                result["MAE"] = "%.2f" % m.mae()
                 for A in self.protected:
                     result[A] = "(%.2f) %.2f" % (m.RBT(self.data[A][training]), m.RBD(self.data[A][training]))
                 results.append(result)
                 # GT on test set
-                result = {"Pair": base+"/"+target, "Metric": "GT Test"}
+                result = {"Pair": base + "/" + target, "Metric": "Label Test"}
                 m = Metrics(self.data[target][test], self.data[base][test])
-                result["MAE"] = "%.2f" %m.mae()
+                result["MAE"] = "%.2f" % m.mae()
                 for A in self.protected:
                     result[A] = "(%.2f) %.2f" % (m.RBT(self.data[A][test]), m.RBD(self.data[A][test]))
                 results.append(result)
-                # Prediction on test set
-                result = {"Pair": base + "/" + target, "Metric": "Unbiased Bridge"}
+                # Model on training set
+                m = Metrics(self.data[target][training], preds[training])
+                result = {"Pair": base + "/" + target, "Metric": "Model Train"}
+                result["MAE"] = "%.2f" % m.mae()
+                for A in self.protected:
+                    result[A] = "(%.2f) %.2f" % (m.RBT(self.data[A][training]), m.RBD(self.data[A][training]))
+                results.append(result)
+                # Model on test set
                 m = Metrics(self.data[target][test], preds[test])
-                result["MAE"] = "%.2f" %m.mae()
+                result = {"Pair": base + "/" + target, "Metric": "Model Test (Unbiased Bridge)"}
+                result["MAE"] = "%.2f" % m.mae()
                 for A in self.protected:
                     result[A] = "(%.2f) %.2f" % (m.RBT(self.data[A][test]), m.RBD(self.data[A][test]))
                 results.append(result)
-                # predict test
+                # # Prediction on test set
+                # result = {"Pair": base + "/" + target, "Metric": "Unbiased Bridge"}
+                # m = Metrics(self.data[target][test], preds[test])
+                # result["MAE"] = m.mae()
+                # for A in self.protected:
+                #     result[A] = "(%.2f) %.2f" % (m.RBT(self.data[A][test]), m.RBD(self.data[A][test]))
+                # results.append(result)
+
+                # Biased Bridge
                 result = {"Pair": base + "/" + target, "Metric": "Biased Bridge"}
                 m = BiasedBridge(preds[val] - self.data[base][val], preds[test] - self.data[target][test].to_numpy())
-                result["MAE"] = "%.2f" %0.0
+                result["MAE"] = "%.2f" % 0.0
                 for A in self.protected:
                     result[A] = "(%.2f) %.2f" % (
                         m.RBT(self.data[A][val], self.data[A][test]), m.RBD(self.data[A][val], self.data[A][test]))
                 results.append(result)
+                ######
+                # output = {}
+                # for A in self.protected:
+                #     output[A] = self.data[A]
+                # output["base"] = self.data[base]
+                # output["target"] = self.data[target]
+                # output["pred"] = preds
+                # output["split"] = [1 if i in train else 2 if i in val else 0 for i in range(len(output["base"]))]
+                #
+                #
+                # df_output = pd.DataFrame(output)
+                # df_output.to_csv("../outputs/"+base+"_"+ target + ".csv", index=False)
+                # df_output = ''
+                #######
             df = pd.DataFrame(results)
             df.to_csv("../results/result_" + base + ".csv", index=False)
             df = ''
