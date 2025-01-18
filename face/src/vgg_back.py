@@ -1,7 +1,5 @@
 import tensorflow as tf
 
-weight_path = "/local/datasets/idai720/checkpoint/vgg_face_weights.h5"
-
 class VGG_Pre:
     def __init__(self, start_size = 64, input_shape = (224, 224, 3)):
         base_model = tf.keras.models.Sequential()
@@ -62,7 +60,7 @@ class VGG_Pre:
 
         base_model.add(tf.keras.layers.Flatten())
         base_model.add(tf.keras.layers.Activation('softmax'))
-        base_model.load_weights(weight_path)
+        base_model.load_weights('checkpoint/vgg_face_weights.h5')
 
 
         base_model_output = tf.keras.layers.Flatten()(base_model.layers[-4].output)
