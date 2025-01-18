@@ -70,7 +70,7 @@ class VGG_Pre:
         base_model_output = tf.keras.layers.Dense(1)(base_model_output)
 
         self.model = tf.keras.Model(inputs=base_model.input, outputs=base_model_output)
-        self.model.compile(loss=tf.keras.losses.Huber(), metrics=['mae'], optimizer='Adam')
+        self.model.compile(loss=tf.keras.losses.Huber(), metrics=['mae'], optimizer='SGD')
 
     def fit(self, X, y, X_val, y_val, sample_weight=None):
         # pre-trained weights of vgg-face model.
@@ -85,7 +85,7 @@ class VGG_Pre:
                                                           , save_best_only=True, mode='auto'
                                                           )
         self.model.fit(X, y, sample_weight=sample_weight, callbacks=[lr_reduce, checkpointer],
-                                 validation_data=(X_val, y_val), batch_size=10, epochs=200)
+                                 validation_data=(X_val, y_val), batch_size=10, epochs=10)
         self.load_model('checkpoint/attractiveness.keras')
 
 
